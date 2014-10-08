@@ -33,8 +33,8 @@ int zankokunatenshinoteeze(int age){//0 - лет, 1 -года, 2 - год
 		switch (age%10){
 			case 1: return 2; break;
 			case 2:
-			case 3: return 1; break;
-			case 4:
+			case 3: 
+			case 4: return 1; break;
 			case 5: 
 			case 6:
 			case 7:
