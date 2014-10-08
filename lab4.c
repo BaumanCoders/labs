@@ -60,14 +60,14 @@ int fuwafuwatime(int age){
 
 int bravesong(int age){
 	if (age > 18){
-		switch (zankokunatenshinoteeze(age)){
+		switch (zankokunatenshinoteeze(age-18)){
 			case 0: printf("Вы совершеннолетний уже %d лет\n", age-18); break;
 			case 1: printf("Вы совершеннолетний уже %d года\n", age-18); break;
 			case 2: printf("Вы совершеннолетний уже %d год\n", age-18); break;
 		}
 	}
 	else if (age < 18){
-		switch (zankokunatenshinoteeze(age)){
+		switch (zankokunatenshinoteeze(18-age)){
 			case 0: printf("До совершеннолетия ещё %d лет\n", 18-age); break;
 			case 1: printf("До совершеннолетия ещё %d года\n", 18-age); break;
 			case 2: printf("До совершеннолетия ещё %d год\n", 18-age); break;
@@ -81,7 +81,7 @@ int bravesong(int age){
 
 int signalgraph(int age){
 	if (age > 60) {
-		switch (zankokunatenshinoteeze(age)){
+		switch (zankokunatenshinoteeze(age-60)){
 			case 0: printf("Вы на пенсии уже %d лет\n", age-60); break;
 			case 1: printf("Вы на пенсии уже %d года\n", age-60); break;
 			case 2: printf("Вы на пенсии уже %d год\n", age-60); break;
@@ -91,7 +91,7 @@ int signalgraph(int age){
 		printf ("Вы пенсионер");
 	}
 	else {
-		switch (zankokunatenshinoteeze(age)){
+		switch (zankokunatenshinoteeze(60-age)){
 			case 0: printf("До пенсии ещё %d лет\n", 60-age); break;
 			case 1: printf("До пенсии ещё %d года\n", 60-age); break;
 			case 2: printf("До пенсии ещё %d год\n", 60-age); break;
